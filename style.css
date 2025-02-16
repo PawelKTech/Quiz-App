@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2a2438;
+}
+
+#content {
+  background-color: #5c5470;
+}
+
+.custom-list {
+  background-color: #4caf50 !important; /* Zmieniamy kolor tła na zielony */
+  border-bottom: none; /* Usuwamy dolny border */
+}
+.custom-list .list-group-item {
+  border-bottom: none; /* Usuwamy border dla każdego elementu listy */
+}
