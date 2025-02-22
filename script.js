@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const container = document.querySelector("#questionContent");
 
 async function getQeustions() {
   const url = "./data/questions.json";
@@ -22,7 +22,7 @@ getQeustions();
 function displayQeustions(json) {
   json.forEach((question, questionIndex) => {
     const div = document.createElement("div");
-    const title = document.createElement("h1");
+    const title = document.createElement("h3");
     title.textContent = question.question;
     div.append(title);
 
