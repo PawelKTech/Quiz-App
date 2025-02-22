@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "answers": ["Hyper Text Markup Language", "High Tech Machine Learning", "Home Tool Management Language"],
+    "correct": 0
+  },
+  {
+    "question": "Which programming language is primarily used for web styling?",
+    "answers": ["JavaScript", "CSS", "Python"],
+    "correct": 1
+  },
+  {
+    "question": "Which symbol is used to end a statement in JavaScript?",
+    "answers": [";", ":", "."],
+    "correct": 0
+  },
+  {
+    "question": "Which SQL command is used to retrieve data from a database?",
+    "answers": ["GET", "SELECT", "FETCH"],
+    "correct": 1
+  },
+  {
+    "question": "What does CSS stand for?",
+    "answers": ["Creative Style Sheets", "Cascading Style Sheets", "Computer Styling System"],
+    "correct": 1
+  },
+  {
+    "question": "Which of the following is NOT a programming language?",
+    "answers": ["Java", "HTML", "Python"],
+    "correct": 1
+  },
+  {
+    "question": "Which keyword is used to declare a variable in JavaScript?",
+    "answers": ["var", "define", "let"],
+    "correct": 2
+  },
+  {
+    "question": "Which PHP tag is used to start a PHP script?",
+    "answers": ["<?php", "<script>", "<php>"],
+    "correct": 0
+  },
+  {
+    "question": "What does SQL stand for?",
+    "answers": ["Structured Query Language", "Simple Question Logic", "Systematic Query List"],
+    "correct": 0
+  },
+  {
+    "question": "Which of the following is used to create a loop in JavaScript?",
+    "answers": ["if", "for", "function"],
+    "correct": 1
+  }
+]
