@@ -27,7 +27,7 @@ async function displayQeustions() {
     const title = document.createElement("h3");
     title.textContent = question.question;
     div.append(title);
-
+    div.classList.add("p-2", "mt-3");
     question.answers.forEach((answer, index) => {
       const label = document.createElement("label");
       const radio = document.createElement("input");
@@ -38,6 +38,8 @@ async function displayQeustions() {
 
       label.appendChild(radio);
       label.appendChild(text);
+
+      label.classList.add("px-3");
 
       div.appendChild(label);
 
@@ -80,13 +82,13 @@ button.addEventListener("click", async (event) => {
     input.disabled = true;
   });
 
-  container.innerHTML = `<h1>
-  Good job you did:
-  ${result}</h1>
+  container.innerHTML = `<h1 class='mb-3'>
+  <i class="bi bi-braces me-2 text-warning "></i>Good job you did:
+  ${result}/10!</h1>
 
-  <button onclick='resetQuestion()'>Again</button>
+  <button onclick='resetQuestion()' type='btn' class='btn btn-warning p-2 me-2'><i class="fa-solid fa-play me-2"></i>Try again</button>
   <a href="index.html">
-    <button>Wróc do strony głowen </button></a>`;
+    <button type='btn' class='btn btn-outline-warning p-2 text-white'>Return to menu </button></a>`;
   console.log(result);
 });
 
