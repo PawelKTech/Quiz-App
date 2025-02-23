@@ -1,4 +1,7 @@
 const container = document.querySelector("#questionContent");
+const button = document.querySelector("#checkAnswerButton");
+console.log(button);
+let parentDiv = button.parentNode;
 
 async function getQeustions() {
   const url = "./data/questions.json";
@@ -38,7 +41,8 @@ function displayQeustions(json) {
       label.appendChild(text);
 
       div.appendChild(label);
+
+      parentDiv.insertBefore(div, button);
     });
-    container.appendChild(div);
   });
 }
