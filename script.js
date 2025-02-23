@@ -21,7 +21,6 @@ async function getQeustions() {
 
 async function displayQeustions() {
   let json = await getQeustions();
-  console.log(json);
   json.forEach((question, questionIndex) => {
     const div = document.createElement("div");
     const title = document.createElement("h3");
@@ -57,7 +56,6 @@ button.addEventListener("click", async (event) => {
   inputs.forEach((radio) => {
     if (radio.checked) {
       userAnswers[radio.name] = radio.value;
-      console.log(radio);
     } else {
       if (!userAnswers[radio.name]) {
         userAnswers[radio.name] = null;
@@ -89,7 +87,7 @@ button.addEventListener("click", async (event) => {
   <button onclick='resetQuestion()' type='btn' class='btn btn-warning p-2 me-2'><i class="fa-solid fa-play me-2"></i>Try again</button>
   <a href="index.html">
     <button type='btn' class='btn btn-outline-warning p-2 text-white'>Return to menu </button></a>`;
-  console.log(result);
+  window.scrollTo(0, 0);
 });
 
 function resetQuestion() {
