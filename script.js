@@ -23,10 +23,17 @@ async function displayQeustions() {
   let json = await getQeustions();
   json.forEach((question, questionIndex) => {
     const div = document.createElement("div");
-    const title = document.createElement("h3");
+    const title = document.createElement("h4");
     title.textContent = question.question;
     div.append(title);
-    div.classList.add("p-2", "mt-3");
+    div.classList.add(
+      "p-4",
+      "mt-3",
+      "bg-dark",
+      "rounded",
+      "mb-4",
+      "text-center"
+    );
     question.answers.forEach((answer, index) => {
       const label = document.createElement("label");
       const radio = document.createElement("input");
@@ -34,11 +41,10 @@ async function displayQeustions() {
       radio.type = "radio";
       radio.name = questionIndex;
       radio.value = index;
-
+      radio.classList.add("me-2");
+      label.classList.add("me-4", "fs-5", "fw-light", "mt-1");
       label.appendChild(radio);
       label.appendChild(text);
-
-      label.classList.add("px-3");
 
       div.appendChild(label);
 
@@ -88,6 +94,7 @@ button.addEventListener("click", async (event) => {
   <a href="index.html">
     <button type='btn' class='btn btn-outline-warning p-2 text-white'>Return to menu </button></a>`;
   window.scrollTo(0, 0);
+  container.classList.add("animated");
 });
 
 function resetQuestion() {
