@@ -24,5 +24,6 @@ I created this simple quiz application to test programming knowledge. The app pr
    ```
 2. Run the aplication
 > **Note:** The application needs to be served from a server (local or remote) to function properly, as it loads external resources like the JSON file. Running it directly from the file system might not work as expected.
-
+3. You can also check out the live version of the app on GitHub Pages:
+- https://pawelktech.github.io/Quiz-App/
 
