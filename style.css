@@ -18,6 +18,10 @@ body {
   animation: fadeInContainer 1.2s ease-in-out;
 }
 
+.animated {
+  animation: fadeInContainer 1.2s ease-in-out;
+}
+
 @keyframes fadeInContainer {
   from {
     opacity: 0;
@@ -45,8 +49,4 @@ input[type="radio"]:checked {
   background-color: #ffc107;
   border-color: #ffc107;
   opacity: 0.9;
-}
-
-.animated {
-  animation: fadeInContainer 1.2s ease-in-out;
 }
